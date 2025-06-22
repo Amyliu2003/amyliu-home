@@ -1,8 +1,10 @@
+import React from 'react';
 import { useState, useRef,useEffect } from 'react';
 import axios from 'axios';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from '../components/Navbar';
 import { Slides } from '../components/Slides';
+import { Resume } from '../components/Resume';
 
 
 
@@ -10,8 +12,15 @@ export function About() {
 
     return(
         <div>
-        <div style={{position:"absolute" ,backgroundColor:"whitesmoke", width:"700px" , height: "500px" , opacity: "0.5",}}>
+        <div style={{position:"absolute" ,
+                     margin:"-2% 6%",
+                     backgroundColor:"whitesmoke", 
+                     width:"50vw" , 
+                     opacity: "0.8",
+                     }}>
+            <Resume />
         </div>
+        
         <Slides />
         </div>
        
